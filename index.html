@@ -1,46 +1,72 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>APOUNDS Bio</title>
+    <meta charset="UTF-8">
+    <title>Web Visualizations</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <h1>~*Ashlee Pounds*~</h1>
+<body style="background-color:rgb(230,230,230);">
+    <!-- Nav Bar -->  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <img src="img.jpg" alt="photo of blonde girl"/>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium eu urna ac auctor. Sed at vestibulum libero, eget luctus lectus. Nunc ut augue viverra, ultrices tellus vitae, auctor elit. Aenean congue facilisis bibendum. Phasellus ac nunc eget turpis aliquam fringilla nec quis lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce vehicula iaculis lectus, a faucibus mi scelerisque at. Aliquam a dolor egestas sem tempor congue quis sed orci. Nullam tempus, felis eu vulputate facilisis, nisi mauris aliquet purus, mattis rhoncus leo odio non lorem. Suspendisse pharetra ut felis sed tincidunt. Nunc sed erat at arcu dignissim lacinia. Cras et diam tempor, ultricies dolor at, condimentum arcu. Donec sed nisl maximus, consectetur erat cursus, pharetra tellus. Aenean convallis nunc vitae ante tempus malesuada non imperdiet tellus. Praesent vestibulum tellus vel magna finibus, vitae tempor libero mollis. Aenean non est ac lectus efficitur euismod.
-  </p>
-  <p>
-    Ut venenatis, massa in elementum convallis, magna orci imperdiet libero, eu cursus metus odio ut magna. Nullam tortor massa, euismod eu lacus sed, hendrerit posuere mauris. Phasellus faucibus facilisis eleifend. Etiam fermentum ligula sit amet quam condimentum convallis in eu erat. Nulla nec purus non risus finibus volutpat. Fusce facilisis, ligula at porttitor placerat, neque nunc feugiat ante, eu volutpat tortor quam at ligula. Aenean venenatis, magna ac ultricies pulvinar, augue nisl blandit nulla, eget semper mi orci vitae ex. Fusce non ex bibendum, commodo ligula at, feugiat orci. Ut pretium mauris lectus, ut feugiat neque vulputate ac.
-  </p>
-  <ul>
-    <li><a target="_blank" href="https://www.facebook.com">My Facebook</a></li>
-    <li><a target="_blank" href="https://www.instagram.com">My Instagram</a></li>
-    <li><a target="_blank" href="https://www.snapchat.com">My Snapchat</a></li>
-  </ul>
+        <!-- Create Links-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Create Plots Dropdown -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class = "nav-link" href="fig_1.html">Figure 1</a>
+                    <a class = "nav-link" href="fig_2.html">Figure 2</a>
+                    <a class = "nav-link" href="fig_3.html">Figure 3</a>
+                    <a class = "nav-link" href="fig_4.html">Figure 4</a>
+                    </div>
+                </li>
 
-  <table border="1">
-    <thead>
-      <tr>
-        <td>Favorite Book</td>
-        <td>Favorite Movie</td>
-        <td>Favorite Song</td>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Ary pohtah</td>
-        <td>Horrible Bosses</td>
-        <td>What im listening to now</td>
-      </tr>
-    </tbody>
+                <!-- Create Other Links -->
+                <li class="nav-item active">
+                <a class="nav-link" href="comparisons.html">Comparisons</a>
+                </li>
+                <li class="nav-item active">
+                <a class="nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-  </table>
+    <!--Create Containers-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1>Summary: Latitude vs. X</h1>
+                <hr>
+                <p><img src="Resources/assets/images/Fig1.png" class="img-responsive" width="300px">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. </p>
+                <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as a part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed. </p>
+            </div>
+
+            <div class="col-md-4">
+                <h1>Visualizations</h1>
+                <hr>
+                <a href="fig_1.html"><img src="Resources/assets/images/Fig1.png" class="rounded graphs" width = "170px"></a>
+                <a href="fig_2.html"><img src="Resources/assets/images/Fig2.png" class="rounded graphs" width = "170px"></a>
+                <a href="fig_3.html"><img src="Resources/assets/images/Fig3.png" class="rounded graphs" width = "170px"></a>
+                <a href="fig_4.html"><img src="Resources/assets/images/Fig4.png" class="rounded graphs" width = "170px"></a>
+            </div>
+        </div>
+    </div>
 
 
 
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-
-</html>

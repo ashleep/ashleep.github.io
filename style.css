@@ -1,0 +1,60 @@
+.col-md-7{
+    background-color: white;
+    margin-right: .2in;
+    margin-bottom: .5in;
+}
+
+.col-md-4{
+    background-color: white;
+    margin-bottom: .5in;
+}
+
+.container{
+    margin-top: .5in;
+    padding: 10px;
+
+}
+
+h1{
+    color:indigo;
+    margin-bottom: 20px;
+}
+
+h2{
+    color: indigo;
+    font-size: 12pt;
+}
+
+.navbar-brand{
+    padding: 10px;
+    font-size: 20pt;
+}
+
+.list-group{
+    list-style: none;
+    margin: .5in;
+    margin-right: 10px;
+    
+}
+
+.graphs{
+    /* padding: 1in 1in 1in 1in; */
+    margin-bottom: .5in;
+}
+
+
+.margin1in{
+    margin-bottom: .5in;
+}
+
+.col-lg-10{
+    background-color: white;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top: 20px;
+    margin-right: 10px;
+}
+
+.whitebkgrnd{
+    background-color: white;
+}
